@@ -15,6 +15,10 @@ public class CodeExample : MonoBehaviour
         Color colorA = new Color(0.5f, 1, 0, 1);
         Color colorB = new Color(0.25f, 0.33f, 0, 1);
         print(Add(colorA, colorB));
+        print(Add(1));
+        print(Add(1, 2));
+        print(Add(1, 2, 3));
+        print(Add(1, 2, 3, 4));
     }
         void Say(string sayThis)
     {
@@ -29,6 +33,7 @@ public class CodeExample : MonoBehaviour
         numTimesCalled++;  //b
         PrintUpdates();  //c        
     }
+       
     void PrintUpdates()  //d
     {
         string outputMessage = "Updates: " + numTimesCalled;  //e
@@ -56,5 +61,15 @@ public class CodeExample : MonoBehaviour
         a = Mathf.Min(c0.a + c1.a, 1.0f);
         return (new Color(r, g, b, a));
     }
+    int Add(params int[] ints)
+    {
+        int sum = 0;
+        foreach(int i in ints)
+        {
+            sum += i;
+        }
+        return (sum);
+    }
+
 
 }
