@@ -19,6 +19,10 @@ public class CodeExample : MonoBehaviour
         print(Add(1, 2));
         print(Add(1, 2, 3));
         print(Add(1, 2, 3, 4));
+        print(Fac(5));
+        print(Fac(0));
+        print(Fac(-5));
+
     }
         void Say(string sayThis)
     {
@@ -70,6 +74,18 @@ public class CodeExample : MonoBehaviour
         }
         return (sum);
     }
-
+    int Fac(int n)
+    {
+        if (n < 0)
+        {
+            return (0);
+        }
+        if (n == 0)
+        {
+            return (1);
+        }
+        int result = n * Fac(n - 1);
+        return (result);
+    }
 
 }
