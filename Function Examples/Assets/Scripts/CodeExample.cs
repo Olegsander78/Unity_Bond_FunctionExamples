@@ -7,8 +7,10 @@ public class CodeExample : MonoBehaviour
     void Awake()
     {
         Say("Hello");
+        int num = Add(2, 5);
+        print(num);
     }
-    void Say(string sayThis)
+        void Say(string sayThis)
     {
         print(sayThis);
     }
@@ -25,5 +27,10 @@ public class CodeExample : MonoBehaviour
     {
         string outputMessage = "Updates: " + numTimesCalled;  //e
         print(outputMessage);  //f
+    }
+    int Add(int numA, int numB)
+    {
+        int sum = numA + numB;
+        return (sum);
     }
 }
