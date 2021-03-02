@@ -1,3 +1,3 @@
-# Unity_Gibson_FunctionExemples
+# Unity_Bond_FunctionExemples
  
-Учебные проекты по книге Unity & C# GameDev Гибсона
+Учебные проекты по книге Unity & C# GameDev Бонда
